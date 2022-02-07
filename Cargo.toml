@@ -1,0 +1,17 @@
+[package]
+name = "bevy_clap"
+version = "0.1.0"
+edition = "2021"
+authors = ["Diggory Blake <diggsey@googlemail.com>"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/Diggsey/bevy_clap"
+description = "A bevy plugin to parse CLI arguments with clap"
+readme = "README.md"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[features]
+derive = ["clap/derive"]
+
+[dependencies]
+bevy = { version = "0.6", default-features = false }
+clap = "3.0.14"
